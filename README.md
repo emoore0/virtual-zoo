@@ -1,6 +1,6 @@
 # Virtual Zoo
 
-This project imagines a **virtual zoo** using Python fundamentals such as **classes, loops, lists, tuples, and dictionaries**. It served as a *refresher* of core Python concepts, including  Oriented Programming  and CSV processing, while also improving my familiarity with the `pandas` and `datetime` modules.
+This project imagines a **virtual zoo** using Python fundamentals such as **classes, loops, lists, tuples, and dictionaries**. It served as a *refresher* of core Python concepts, including  Oriented Programming  and CSV processing. I while also imporved my familiarity with the `pandas` and learnt about the `datetime` modules.
 
 
 ## Features
