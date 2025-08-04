@@ -1,5 +1,6 @@
 import pandas as pd
 from datetime import datetime, timedelta
+import random
 
 
 class Animal: # Create Animal class to store attributes for each animal
@@ -95,5 +96,34 @@ def combined(instance):
         total_age += data[2]
     return total_age # Adds up the ages of all animals in the zoo
 
-print(combined(zoo))
+# print(combined(zoo))
 
+def visiting(instance):
+    return random.choices(instance.animals,k = 3) # Shows a list of three random zoo animals
+
+# print(visiting(zoo))
+
+def new_animal(instance): # Allows visitors to indepently add animals to their own virtual zoo
+    print("Enter a species of animal:")
+    species = input("")
+    print("Enter the name of the animal: ")
+    name = input("")
+    print("Enter the age of the animal: ")
+    age = int(input(""))
+    instance.add_animal(species,name,age)
+
+    
+    
+    return instance.animals 
+
+# print(new_animal(zoo))
+# print(zoo.animals)
+
+while True:
+    new_animal(zoo)
+    print("Add another animal? (y/n): ")
+    more = input("")
+    if more != 'y':
+        break
+
+# print(zoo.animals)
